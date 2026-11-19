@@ -40,8 +40,6 @@ Management wants to know:
 
 - **Database:** `ecommerce_analytics` (MySQL)
 - **Tables:** Customers, Products, Orders, OrderDetails, Returns
-- **Records:** [add number of orders, e.g. 10K+ Orders]
-- **Source:** [add source, e.g. course-provided dataset / Kaggle link]
 
 ### Database Structure
 
@@ -96,21 +94,22 @@ Management wants to know:
 - **H₀:** Discount has no significant effect on Average Order Value.
 - **H₁:** Discount has a significant effect on Average Order Value.
 - **Method:** Two-sample t-test at 5% significance level (α = 0.05)
-- **Result:** [t-statistic = ..., p-value = ... → reject / fail to reject H₀]
+- **Result:** t-statistic = 13.87, p-value = 1.8665022824881592e-30 → reject H₀
 
 ## 🤖 Profit Prediction Model
 
 - **Goal:** Predict order profit
 - **Features:** Quantity, Unit Price, Discount, Category, Region, Customer Information
-- **Models tried:** [e.g. Linear Regression, Random Forest]
-- **Best model performance:** MAE = [...], RMSE = [...], R² = [...]
+- **Models tried:** Random Forest Regressor
+- **Best model performance:** MAE = 74.62, RMSE = 211.25, R² = 0.99
 
 ## 🔮 Sales Forecasting
 
 - **Input:** Historical monthly sales
 - **Approach:** Time series analysis → forecasting model
 - **Forecast horizon:** Next 6 months
-- **Outcome:** [e.g. sales expected to grow / stay stable by ...%]
+- **Outcome:** Sales generated 153.31M in revenue across 4.39K orders at a 34.26% profit margin,
+- remaining stable overall with a peak in July before plateauing ~35–40% lower from August to December.
 
 ## 📊 Dashboard Highlights
 
@@ -139,13 +138,31 @@ Management wants to know:
 
 ## 💡 Business Insights
 
-- [Total revenue and profit generated: ...]
-- [Top 3 categories / products and their contribution: ...]
-- [Top customers or regions driving revenue: ...]
-- [Effect of discounts on profit: ...]
-- [Hypothesis test conclusion: ...]
-- [Most important factors in predicting profit: ...]
-- [Forecast summary and recommendation: ...]
+1. Total revenue and profit generated:
+ ◉ Generated 153.31M in total revenue and 52.52M in total profit across 4.39K orders,
+   achieving an average order value of 34.95K and a 34.26% overall profit margin.
+
+2. Top 3 categories / products and their contribution:
+   ◉ Categories: Home leads at 48.11M (~31.4% of total revenue), followed by Electronics at 45.5M (~29.7%) and Fashion at 34.92M (~22.8%).
+   ◉ Products: Bedsheet leads at 11M, followed by Power Bank, Hair Dryer, and Mixer Grinder tied at 9M each.   
+
+3. Top customers or regions driving revenue:
+   ◉ South (40.47M), West (37.54M), and North (36.24M) drive the majority of sales evenly, while East lags significantly at 14.29M.
+   
+4. Effect of discounts on profit:
+   ◉ Not visible on the current dashboard view (insert your notebook/SQL analysis finding.
+
+5. Hypothesis test conclusion:
+   ◉ Not visible on the current dashboard view (insert your statistical test result.
+
+6. Most important factors in predicting profit:
+   ◉ Based on the metrics, Sales Volume / Revenue, Product Category (Home & Electronics), Region (South/West/North),
+   and Return Rates (9.4M lost across top return reasons) are primary drivers of net profit.
+   
+7. Forecast summary and recommendation:
+  ◉  Monthly sales peaked in July (~18M) before stabilizing at a lower plateau (~10M–11M/month) from August through December.
+   To restore growth, target marketing and logistics expansion in the underperforming East region (14.29M) and
+   reduce the 9.4M return leakage by addressing product quality (Not Satisfied: 2.2M), packaging (Damaged: 2.0M), and shipping speed (Late Delivery: 1.9M).
 
 ## 📷 Dashboard Preview
 
@@ -156,7 +173,8 @@ Management wants to know:
 
 ## 📁 Repository Structure
 
-```
+```<img width="1407" height="787" alt="Dashboard" src="https://github.com/user-attachments/assets/412217e2-3861-4ac4-ad7a-60aca631b723" />
+
 ecommerce-sales-analytics/
 ├── data/            # CSV files (or sample data)
 ├── sql/             # table creation and analysis queries
@@ -185,10 +203,8 @@ ecommerce-sales-analytics/
 
 ## 👨‍💻 Author
 
-**[Your Name]**
+Priyadarshani Suresh Shingade
 
-- LinkedIn: [your LinkedIn profile link]
-- GitHub: [your GitHub profile link]
+- LinkedIn: www.linkedin.com/in/priyadarshani-shingade-228626354
+- GitHub:  https://github.com/priyashingade2912
 
----
-⭐ If you found this project helpful, consider giving this repository a star!
