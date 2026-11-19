@@ -165,11 +165,7 @@ Management wants to know:
    reduce the 9.4M return leakage by addressing product quality (Not Satisfied: 2.2M), packaging (Damaged: 2.0M), and shipping speed (Late Delivery: 1.9M).
 
 ## 📷 Dashboard Preview
-
-<!-- After uploading images to the repo's images/ folder, use: -->
-<!-- ![Executive Overview](images/dashboard_1.png) -->
-<!-- ![Customer Analytics](images/dashboard_2.png) -->
-<!-- ![Forecasting](images/dashboard_3.png) -->
+<img width="1407" height="787" alt="image" src="https://github.com/user-attachments/assets/54bcf95e-8a61-4176-bfc1-81b1739a059d" />
 
 ## 📁 Repository Structure
 
