@@ -185,10 +185,7 @@ ecommerce-sales-analytics/
 
 ## 👨‍💻 Author
 
-**[Your Name]**
+Priyadarshani Suresh Shingade
 
-- LinkedIn: [your LinkedIn profile link]
-- GitHub: [your GitHub profile link]
-
----
-⭐ If you found this project helpful, consider giving this repository a star!
+- LinkedIn: www.linkedin.com/in/priyadarshani-shingade-228626354
+- GitHub: https://github.com/priyashingade2912
