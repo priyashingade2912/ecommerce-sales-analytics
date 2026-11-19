@@ -48,7 +48,15 @@ Management wants to know:
 - Products → OrderDetails (one-to-many)
 - Orders → Returns (one-to-many)
 
-<!-- Add your ER diagram: ![ER Diagram](images/er_diagram.png) -->
+## ER Diagram
+
+```mermaid
+erDiagram
+    CUSTOMERS ||--o{ ORDERS : places
+    ORDERS ||--|{ ORDER_ITEMS : contains
+    ORDERS ||--o{ ORDER_PAYMENTS : "paid via"
+    ORDERS ||--o{ ORDER_REVIEWS : receives
+```
 
 ## 🛠️ Tech Stack
 
@@ -117,21 +125,17 @@ Management wants to know:
 - Total Revenue
 - Total Profit
 - Total Orders
-- Total Customers
+- Profit Margin %
 - Average Order Value (AOV)
 
-### Customer Analytics
-- Top Customers
-- [Add your visuals]
-
 ### Product Analytics
-- Top Products and Categories
-- [Add your visuals]
-
+- Top 10 Products
+  
 ### Sales Analytics
 - Monthly Revenue Trend
 - Regional Performance
-- Discount vs Profit
+- Revenue by Category
+- Return Reasons
 
 ### Forecasting
 - 6-Month Sales Forecast
